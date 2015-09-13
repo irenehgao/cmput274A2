@@ -6,13 +6,13 @@ bool pressed = false;
 
 void setup() {
 
-or ( int i = 0;i < 5; i++ ) {
+for ( int i = 0;i < 5; i++ ) {
  pinMode(LEDPins[i],OUTPUT);
  digitalWrite(LEDPin[i],LED[i]);
  }
 
 
- iMode(p1ButtonPin,INPUT);
+ pinMode(p1ButtonPin,INPUT);
  digitalWrite(p1ButtonPin,HIGH);
  pinMode(p2ButtonPin,INPUT);
  digitalWrite(p2ButtonPin,HIGH);
