@@ -17,14 +17,14 @@ void setup() {
   }
 
   pinMode(p1ButtonPin,INPUT);
-  digitalWrite(p1ButtonPin,HIGH);
-  pinMode(p2ButtonPin,INPUT);
-  digitalWrite(p2ButtonPin,HIGH);
+  digitalWrite(p1ButtonPin, HIGH);
+  pinMode(p2ButtonPin, INPUT);
+  digitalWrite(p2ButtonPin, HIGH);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  if ((pressed = true) && digitalRead(p1ButtonPin) == LOW) {
+  if ((pressed = true) && (digitalRead(p1ButtonPin) == LOW)) {
       for( int i = 0; i <= 4; i++ ) {
         if (LED[i] == LOW) {
           digitalWrite(LEDPins[i], HIGH);
@@ -35,7 +35,7 @@ void loop() {
           LED[i] = LOW;
         }
       }
-  }else if ((pressed = true) && digitalRead(p2ButtonPin) == LOW) {
+  }else if ((pressed = true) && (digitalRead(p2ButtonPin) == LOW)) {
     for(int i = 0; i <= 4; i++) {
       if (LED[i] == LOW) {
         digitalWrite(LEDPins[i], HIGH);
@@ -52,7 +52,7 @@ void loop() {
     && digitalRead(p2ButtonPin) == LOW) {
         pressed = true;
     }else if  ((digitalRead(p1ButtonPin) == HIGH)
-      && digitalRead(p2ButtonPin) == HIGH) {
+      && (digitalRead(p2ButtonPin) == HIGH)) {
         pressed = false;
       }
 }
