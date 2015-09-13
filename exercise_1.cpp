@@ -25,7 +25,7 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   if ((pressed = true) && digitalRead(p1ButtonPin) == LOW) {
-      for( int i = 0; i < 5; i++ ) {
+      for( int i = 0; i <= 4; i++ ) {
         if (LED[i] == LOW) {
           digitalWrite(LEDPins[i], HIGH);
           LED[i] = HIGH;
@@ -36,7 +36,7 @@ void loop() {
         }
       }
   }else if ((pressed = true) && digitalRead(p2ButtonPin) == LOW) {
-    for(int i = 0; i < 5; i++) {
+    for(int i = 0; i <= 4; i++) {
       if (LED[i] == LOW) {
         digitalWrite(LEDPins[i], HIGH);
         LED[i] = HIGH;
