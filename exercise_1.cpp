@@ -49,9 +49,9 @@ void loop() {
   }
 
   if ((digitalRead(p1ButtonPin) == LOW)
-    && digitalRead(p2ButtonPin) == LOW) {
+    && (digitalRead(p2ButtonPin) == LOW)) {
         pressed = true;
-    }else if  ((digitalRead(p1ButtonPin) == HIGH)
+    }else if ((digitalRead(p1ButtonPin) == HIGH)
       && (digitalRead(p2ButtonPin) == HIGH)) {
         pressed = false;
       }
