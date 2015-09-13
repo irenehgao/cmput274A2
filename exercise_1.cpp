@@ -11,7 +11,7 @@ int LED[5] = {LOW, LOW, LOW, LOW, LOW};
 bool pressed = false;
 
 void setup() {
-  for ( int i = 0;i < 5; i++ ) {
+  for ( int i = 0;i <= 4; i++ ) {
     pinMode(LEDPins[i],OUTPUT);
     digitalWrite(LEDPins[i],LED[i]);
   }
