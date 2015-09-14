@@ -27,22 +27,22 @@ void loop() {
   if ((pressed = true) && (digitalRead(p1ButtonPin) == LOW)) {
       for( int i = 0; i <= 4; i++ ) {
         if (LED[i] == LOW) {
-          digitalWrite(LEDPins[i], HIGH);
           LED[i] = HIGH;
+          digitalWrite(LEDPins[i], HIGH);
           break;
         }else if (LED[i] == HIGH) {
-          digitalWrite(LEDPins[i], LOW);
           LED[i] = LOW;
+          digitalWrite(LEDPins[i], LOW);
         }
       }
   }else if ((pressed = true) && (digitalRead(p2ButtonPin) == LOW)) {
     for(int i = 0; i <= 4; i++) {
       if (LED[i] == LOW) {
-        digitalWrite(LEDPins[i], HIGH);
         LED[i] = HIGH;
+        digitalWrite(LEDPins[i], HIGH);
       }else if (LED[i] == HIGH){
-        digitalWrite(LEDPins[i], LOW);
         LED[i] = LOW;
+        digitalWrite(LEDPins[i], LOW);
         break;
       }
     }
