@@ -24,6 +24,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+  delay(300);
   if ((pressed = true) && (digitalRead(p1ButtonPin) == LOW)) {
       for( int i = 0; i <= 4; i++ ) {
         if (LED[i] == LOW) {
